@@ -1,0 +1,13 @@
+body {
+  background-color: #29343d;
+  font-family: "Roboto", sans-serif;
+}
+
+.weatherAppBody {
+  background-color: #92a4b17f;
+  border-radius: 10px;
+  margin: 50px 40px auto;
+  max-width: 600px;
+  padding: 20px 15px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
