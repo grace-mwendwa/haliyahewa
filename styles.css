@@ -11,3 +11,53 @@ body {
   padding: 20px 15px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
+
+.searchInput {
+  background-color: #29343dd8;
+  border: none;
+  border-radius: 5px;
+  color: #92a4b1;
+  padding: 10px;
+  width: 80%;
+}
+
+.submitInput {
+  background-color: #1e2025;
+  border: none;
+  border-radius: 5px;
+  color: #92a4b1;
+  padding: 10px;
+  width: 15%;
+}
+
+.currentWeather {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currentCity {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.weatherTemperature {
+  padding: 5px;
+  position: relative;
+}
+
+.currentWeatherIcon {
+  font-size: 30px;
+}
+
+.currentWeatherNumber {
+  font-size: 100px;
+  font-weight: 400;
+  top: 10px
+  position: relative;
+}
+.currentWeatherUnit {
+  font-size: 20px;
+  position: relative;
+  top: -50px;
+}

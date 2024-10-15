@@ -16,22 +16,30 @@
     <div class="weatherAppBody">
       <div>
         <header>
-          <form>
-            <input type="search" placeholder="Enter a City .." />
-            <input type="submit" value="search" />
+          <form class="searchForm">
+            <input
+              type="search"
+              placeholder="Enter a City .."
+              class="searchInput"
+            />
+            <input type="submit" value="search" class="submitInput" />
           </form>
         </header>
       </div>
       <main>
-        <div>
+        <div class="currentWeather">
           <div>
-            <h1>Nairobi</h1>
-            <p>
+            <h1 class="currentCity">Nairobi</h1>
+            <p class="currentWeatherDetails">
               Tuesday 14:49, scattered clouds
               <br />Humidity: 66%, Wind: 3.13km/h
             </p>
           </div>
-          <div>🌤️ 12°C</div>
+          <div class="current Temperature">
+            <span class="currentWeatherIcon">🌤️</span>
+            <span class="currentWeatherNumber">12</span>
+            <span class="currentWeatherUnit">°C</span>
+          </div>
         </div>
       </main>
       <footer>
