@@ -1,19 +1,27 @@
 body {
-  background-color: #29343d;
+  background-color: #f9f7fe;
   font-family: "Roboto", sans-serif;
+}
+a {
+  color: #885df1;
 }
 
 .weatherAppBody {
-  background-color: #92a4b17f;
+  background-color: white;
   border-radius: 10px;
-  margin: 50px 40px auto;
+  margin: 60px auto;
   max-width: 600px;
-  padding: 20px 15px;
+  padding: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
+header {
+  border-bottom: 1.5px solid #f9f7fe;
+  padding: 0px 0 30px 0;
+}
+
 .searchInput {
-  background-color: #29343dd8;
+  background-color: #f9f7fe;
   border: none;
   border-radius: 5px;
   color: #92a4b1;
@@ -22,12 +30,17 @@ body {
 }
 
 .submitInput {
-  background-color: #1e2025;
+  background-color: #885df1;
   border: none;
   border-radius: 5px;
-  color: #92a4b1;
+  color: #f9f7fe;
+  margin-left: 10px;
   padding: 10px;
-  width: 15%;
+  width: 17.5%;
+}
+
+main {
+  padding: 30px 0;
 }
 
 .currentWeather {
@@ -36,9 +49,19 @@ body {
 }
 
 .currentCity {
-  font-size: 50px;
-  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
   margin-bottom: 10px;
+}
+
+.currentWeatherDetails {
+  color: rgba(39, 33, 66, 0.4);
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.currentWeatherDetails strong {
+  color: #f65282;
 }
 
 .weatherTemperature {
@@ -52,12 +75,20 @@ body {
 
 .currentWeatherNumber {
   font-size: 100px;
-  font-weight: 400;
-  top: 10px
+  top: 20px;
   position: relative;
 }
+
 .currentWeatherUnit {
   font-size: 20px;
   position: relative;
-  top: -50px;
+  top: -40px;
+}
+
+footer {
+  border-top: 1.5px solid #f9f7fe;
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
 }
