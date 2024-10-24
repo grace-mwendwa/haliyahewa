@@ -16,20 +16,26 @@
     <div class="weatherAppBody">
       <div>
         <header>
-          <form class="searchForm">
+          <form class="searchForm" id="weatherSearchForm">
             <input
               type="search"
               placeholder="Enter a City .."
               class="searchInput"
+              id="searchCityInput"
             />
-            <input type="submit" value="search" class="submitInput" />
+            <input
+              type="submit"
+              value="search"
+              class="submitInput"
+              id="weatherSubmitButton"
+            />
           </form>
         </header>
       </div>
       <main>
         <div class="currentWeather">
           <div>
-            <h1 class="currentCity">Nairobi</h1>
+            <h1 class="currentCity" id="weatherCurrentCity">Nairobi</h1>
             <p class="currentWeatherDetails">
               Tuesday 14:49, scattered clouds
               <br />
@@ -59,4 +65,5 @@
       </footer>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
