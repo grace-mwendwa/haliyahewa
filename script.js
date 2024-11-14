@@ -7,6 +7,10 @@ function searchWeather(response) {
   let windSpeedElement = document.querySelector("#windspeed");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#weatherIcon");
+  console.log(response.data);
+
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class = "currentWeatherIcon" />`;
 
   currentCity.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);

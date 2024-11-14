@@ -49,12 +49,13 @@ main {
 }
 
 .currentCity {
-  font-size: 40px;
+  font-size: 38px;
   line-height: 48px;
   margin-bottom: 10px;
 }
 
 .currentWeatherDetails {
+  font-size: 16px;
   color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
   font-weight: 500;
@@ -64,25 +65,25 @@ main {
   color: #f65282;
 }
 
-.weatherTemperature {
-  padding: 5px;
-  position: relative;
+.currentTemperature {
+  display: flex;
+  margin: 20px;
 }
 
 .currentWeatherIcon {
-  font-size: 30px;
+  width: 88px;
+  height: 88px;
 }
 
 .currentWeatherNumber {
-  font-size: 100px;
-  top: 20px;
-  position: relative;
+  font-size: 88px;
+  line-height: 88px;
+  font-weight: bold;
 }
 
 .currentWeatherUnit {
-  font-size: 20px;
-  position: relative;
-  top: -40px;
+  font-size: 28px;
+  margin-top: 6px;
 }
 
 footer {
