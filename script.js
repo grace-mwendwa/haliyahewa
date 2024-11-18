@@ -12,6 +12,8 @@ function searchWeather(response) {
 
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class = "currentWeatherIcon" />`;
 
+  getForecast(response.data.city);
+
   currentCity.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
   temperatureElement.innerHTML = temperatureResult;
@@ -58,7 +60,14 @@ function currentWeatherResult(event) {
   searchCity(currentCityInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  apiKeyForecast = "64a733e6o87ac4af3690142d20281tdb";
+  apiUrlForecast = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKeyForecast}&units=metric`;
+  axios(apiUrlForecast).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
   let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -67,7 +76,7 @@ function displayForecast() {
       forecastHtml +
       `
   <div class="weatherForecast-day">
-   <div class="weatherForecast-date">Tue</div>
+   <div class="weatherForecast-date">${day}</div>
    <div class="weatherForecast-icon">☁️</div>
    <div class="weatherForecast-temperatures">
      <div class="weatherForecast-temperature">
@@ -88,4 +97,3 @@ let searchCityWeather = document.querySelector("#weatherSearchForm");
 searchCityWeather.addEventListener("submit", currentWeatherResult);
 
 searchCity("Nairobi");
-displayForecast();
